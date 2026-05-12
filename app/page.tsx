@@ -6,7 +6,7 @@ async function getBankSampah() {
   try {
     const { data, error } = await supabase.from('bank_sampah').select('*');
     if (error) {
-      throw error; 
+      throw error;
     }
     if (!data || data.length === 0) throw new Error("Data kosong atau terhalang RLS"); 
     return data;
