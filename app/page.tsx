@@ -136,7 +136,107 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 5. FOOTER */}
+{/* BAGIAN DOKUMENTASI KEGIATAN */}
+      <section id="dokumentasi" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          
+          <h2 className="text-3xl font-bold text-green-900 mb-4">
+            Dokumentasi Kegiatan
+          </h2>
+          <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+            Momen-momen kebersamaan dan aksi nyata kita dalam menjaga lingkungan agar tetap bersih dan asri.
+          </p>
+
+          {/* Grid Galeri (1 kolom di HP, 2 di Tablet, 3 di Laptop) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            
+            {/* Foto 1 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan1.png" 
+                alt="Kegiatan 1" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Foto 2 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan2.png" 
+                alt="Kegiatan 2" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Foto 3 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan3.png" 
+                alt="Kegiatan 3" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
+{/* Foto 4 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan4.png" 
+                alt="Kegiatan 4" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Foto 5 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan5.png" 
+                alt="Kegiatan 5" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Foto 6 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan6.png" 
+                alt="Kegiatan 6" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Foto 7 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan7.png" 
+                alt="Kegiatan 7" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Foto 8 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan8.jpg" 
+                alt="Kegiatan 8" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Foto 9 */}
+            <div className="overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="/kegiatan9.jpg" 
+                alt="Kegiatan 9" 
+                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            {/* Jika Anda punya 6 foto, tinggal copy-paste blok <div> di atas dan ganti tulisan src="/kegiatan4.jpg" dst. */}
+            
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
       <footer className="bg-green-950 text-white py-16 flex flex-col items-center justify-center text-center">
         <img 
           src="/logo-karsa.png" 
