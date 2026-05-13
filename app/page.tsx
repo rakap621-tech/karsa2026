@@ -99,30 +99,30 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 3. VIDEO SOSIALISASI SECTION */}
-      <section id="video" className="py-20 px-6 md:px-12 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-800 mb-10 border-l-4 border-green-600 pl-4">Video Sosialisasi</h2>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {/* Loop Kartu Video (Contoh 4 Video) */}
-          {[
-            { title: "Cara Memilah Sampah dengan Benar", img: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=600" },
-            { title: "Siklus Bank Sampah Sendowo", img: "https://images.unsplash.com/photo-1604187351574-c75ca79f5807?q=80&w=600" },
-            { title: "Manfaat Pemilahan bagi Kos", img: "https://images.unsplash.com/photo-1528323273322-d81458248d40?q=80&w=600" },
-            { title: "Dampak Positif Lingkungan", img: "https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?q=80&w=600" }
-          ].map((video, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="relative rounded-2xl overflow-hidden aspect-video mb-4 shadow-lg">
-                <img src={video.img} alt={video.title} className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700"/>
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/50 transition-colors">
-                  <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-md border border-white/30">
-                    <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[14px] border-l-white border-b-[8px] border-b-transparent ml-1"></div>
-                  </div>
-                </div>
-              </div>
-              <h3 className="font-bold text-gray-700 group-hover:text-green-700 transition-colors">{video.title}</h3>
-            </div>
-          ))}
+      {/* BAGIAN VIDEO SOSIALISASI */}
+      <section id="video" className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          
+          <h2 className="text-3xl font-bold text-green-900 mb-4">
+            Mengenal Program KARSA
+          </h2>
+          <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
+            Saksikan video sosialisasi berikut untuk memahami bagaimana langkah kecil kita bisa membawa perubahan besar bagi lingkungan.
+          </p>
+
+          {/* Kotak Video Responsif (Bagus di HP & Laptop) */}
+          <div className="relative w-full overflow-hidden rounded-2xl shadow-xl aspect-video bg-black">
+            <iframe 
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/Z26sH2S-g6c?si=MovvFFcK3IMN8tDr" 
+              title="Video Sosialisasi KARSA" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+            ></iframe>
+          </div>
+
         </div>
       </section>
 
